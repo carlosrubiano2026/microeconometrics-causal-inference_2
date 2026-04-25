@@ -1,0 +1,64 @@
+# ==============================
+# STATA FILES (GENERATED OUTPUT)
+# ==============================
+
+*.log        # Log files
+*.smcl       # Stata log format
+*.gph        # Stata graphs
+*.dta.bak    # Backup datasets
+*.tmp        # Temporary files
+
+# ==============================
+# OUTPUT FILES (EXPORTS)
+# ==============================
+
+*.csv
+*.xlsx
+*.xls
+*.tex
+*.out
+*.txt
+
+# (opcional) si NO quieres subir tablas/exportaciones
+# comenta esto si sí quieres incluir resultados
+# *.txt
+
+# ==============================
+# FIGURES (IF GENERATED)
+# ==============================
+
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+
+# ==============================
+# OS / EDITOR
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+# ==============================
+# JUPYTER / PYTHON (if mixed project)
+# ==============================
+
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# ==============================
+# PERSONAL / LOCAL FILES
+# ==============================
+
+*.zip
+*.tar
+*.gz
+
+# ==============================
+# OPTIONAL: LARGE DATA
+# ==============================
+
+# Uncomment if you don't want to upload raw datasets
+# data/*.dta
