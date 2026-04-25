@@ -1,0 +1,43 @@
+## Main Results
+
+### Experimental Benchmark
+
+| Sample | Specification | ATT / Treatment Effect |
+|---|---:|---:|
+| NSW experimental | OLS B1 | 1,794 |
+| NSW experimental | OLS B2 | 1,671 |
+| NSW experimental | OLS B3 | 1,676 |
+| NSW experimental | OLS B4 | 1,699 |
+
+The experimental benchmark suggests a positive training effect of approximately USD 1,700 in 1978 earnings.
+
+### Observational OLS Estimates
+
+| Sample | B1 | B2 | B3 | B4 |
+|---|---:|---:|---:|---:|
+| PSID controls | -15,205 | -5,928 | 752 | 1,239 |
+| CPS controls | -8,498 | -2,973 | 699 | 950 |
+
+Naive observational comparisons are highly sensitive to covariate adjustment and can be severely biased before controlling for pre-treatment earnings.
+
+### Propensity Score Matching Estimates
+
+| Comparison sample | Method | ATT |
+|---|---|---:|
+| NSW treated + PSID controls | Nearest neighbor | 1,513 |
+| NSW treated + PSID controls | Radius matching | 999 |
+| NSW treated + PSID controls | Kernel matching | 1,184 |
+| NSW treated + CPS controls | Nearest neighbor | 1,983 |
+| NSW treated + CPS controls | Kernel matching | 421 |
+
+### Balance Diagnostics
+
+| Sample | Method | Mean Bias Before | Mean Bias After |
+|---|---|---:|---:|
+| PSID | Nearest neighbor | 104.7 | 11.8 |
+| PSID | Radius | 104.7 | 8.3 |
+| PSID | Kernel | 104.7 | 9.8 |
+| CPS | Nearest neighbor | 106.6 | 3.4 |
+| CPS | Kernel | 106.6 | 14.6 |
+
+Matching substantially improves covariate balance, especially for CPS nearest-neighbor matching. However, some specifications still show remaining imbalance, so results should be interpreted carefully.
